@@ -1,0 +1,344 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.cardBox {
+   width: 892px;
+   height: 464px;
+   position: relative;
+   display: grid;
+   place-items: center;
+   overflow: hidden;
+   border-radius: 20px;
+   background: #5c5757;
+   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 10px 0px, rgba(0, 0, 0, 0.5) 0px 2px 25px 0px;
+}
+.card {
+    position: absolute;
+    width: 99%;
+    height: 98%;
+    background: linear-gradient(180deg, #313131 0%, #1F1F1F 100%);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 60px -12px, rgba(0, 0, 0, 0.5) 0px 18px 36px -18px;
+}
+
+.cardBox::before {
+    content: "";
+    position: absolute;
+    width: 892px;
+    height: 464px;
+    top: 1%;
+    background: linear-gradient(360deg, #00FE93 0%, rgba(0, 133, 255, 0) 82.08%);
+}
+
+.leftSide {
+    display: inline-block;
+    position: absolute;
+    width: 361px;
+    height: 454px;
+    left: 2px;
+    border-radius: 13px;
+}
+
+.rightSide {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    width: 520px;
+    height: 454px;
+    border-radius: 13px;
+}
+
+.houseImg {
+    position: absolute;
+    width: 351px;
+    height: 234px;
+    left: 2px;
+}
+
+.houseInfo {
+    position: absolute;
+    left: 2px;
+    bottom: 5px;
+    background: url("./assets/Icon.png");
+    width: 351px;
+    height: 212px;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+}
+
+.houseInfo h1 {
+    color: #00FF66;
+    position: absolute;
+    left: 40px;
+    top: 15px;
+}
+
+.loc {
+    position: absolute;
+    left: 40px; 
+    margin-top: 20%;
+}
+
+.loc h4 {
+    display: inline-block;
+    position: absolute;
+    width: fit-content;
+    top: -1px;
+    left: 22px;
+    width: 280px;
+}
+
+.absoluteDesign {
+    position: absolute;
+    top: -1px;
+    left: 0px; 
+    margin-top: 30%;
+}
+
+.houseInfoMulti {
+    display: inline-block;
+    margin-left: 40px
+}
+
+.houseInfoMulti h5 {
+    float: right;
+    margin-left: 10px;
+} 
+
+.stars {
+    position: absolute;
+    margin-top: 40%;
+    left: 35px; 
+    font-size: 25px;
+}
+
+.nostar {
+    background: #534b4b;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.star {
+    background: #F0AD01;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.rightSide h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 42px;
+    text-align: left;
+}
+
+.rightSide h5 {
+
+    width: 95%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+
+    color: #FFFFFF;
+
+    opacity: 0.28;
+    text-align: left;
+    margin: 5px;
+}
+
+
+.ownerInfo i {
+    font-size: 8px;
+}
+
+.ownerInfo p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 8px;
+    line-height: 10px;
+}
+
+.houseOwnerInfo {
+
+    width: 494px;
+    height: 65px;
+    background: linear-gradient(89.02deg, #1A1A1A -0.7%, #0D0D0D 100%);
+    border-radius: 5px;
+}
+
+.player .playerImg {
+    border-radius: 30px;
+    position: absolute;
+    left: 3%;
+    margin-top: 8px;
+}
+
+.player h2 {
+    display: inline-block;
+    position: relative;
+    right: 25%;
+    margin-top: 15px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 17px;
+    line-height: 21px;
+    
+}
+
+.player h6 {
+    
+    position: relative;
+    left: 11.2%;
+    width: 100px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 10px; 
+    color: #797979;
+}
+
+.alarm {
+    display: inline-block;
+    position: absolute;
+    right: 7%;
+    top: 31%;
+}
+
+.map {
+    margin-top: 25px;
+}
+
+.map img {
+    border-radius: 5px;
+}
+
+.buyHouseBtn button {
+    display: none;
+
+    width: 137px;
+    height: 34px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 18px;
+    
+    color: #FFFFFF;
+
+    background: linear-gradient(94.59deg, #57FF54 0%, #277526 73.44%);
+    border: none;
+    border-radius: 5px;
+    float: right;
+    transition: 0.3s all ease;
+}
+
+.buyHouseBtn button:hover {
+    color: #ffffff65;
+    cursor: pointer;
+}
+
+.sellHouseSection {
+    display: block;
+}
+
+.enterHouse {
+    width: 34px;
+    height: 34px;
+    border-radius: 5px;
+    background: url("./assets/HouseIcon.png") center #4791FF;
+    background-repeat: no-repeat;
+    border: none;
+    transition: 0.3s all ease;
+    float: left;
+    margin-right: 5px;
+}
+
+.enterHouse:hover {
+    background: url("./assets/HouseIcon.png") center #4791ff77;
+    background-repeat: no-repeat;
+}
+
+.enterGarage {
+    width: 34px;
+    height: 34px;
+    border-radius: 5px;
+    background: url("./assets/CarIconDark.png") center #FFFFFF;
+    background-repeat: no-repeat;
+    border: none;
+    transition: 0.3s all ease;
+    float: left;
+    margin-right: 5px;
+}
+
+.enterGarage:hover {
+    background: url("./assets/CarIconDark.png") center #ffffff77;
+    background-repeat: no-repeat;
+}
+
+.friends {
+    width: 34px;
+    height: 34px;
+    border-radius: 5px;
+    background: url("./assets/UserIcon.png") center #54FF65;;
+    background-repeat: no-repeat;
+    border: none;
+    transition: 0.3s all ease;
+    background-position: 8px 8px;
+    float: left;
+}
+
+.friends:hover {
+    background: url("./assets/UserIcon.png") center #54FF6577;
+    background-repeat: no-repeat;
+}
+
+.sellHouseBtn {
+
+    width: 137px;
+    height: 34px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 18px;
+    
+    color: #FFFFFF;
+
+    background: linear-gradient(94.59deg, #FF5454 0%, #6F2A2A 100%);
+    border: none;
+    border-radius: 5px;
+    float: right;
+    transition: 0.3s all ease;
+}
+
+.sellHouseBtn:hover {
+    color: #ffffff65;
+    cursor: pointer;
+}
